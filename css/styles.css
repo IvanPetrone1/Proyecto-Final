@@ -1,0 +1,40 @@
+
+*{
+    color:brown;
+}
+
+p{
+    color:rgb(128,170,255);
+    width: 300px;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    border:1px solid black;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 3px;
+    color:green;
+    font-size: bold;
+}
+
+section {
+
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+
+}
+
+#pepe{
+    color:blue;
+    font-size: 20px;
+}
+
+.estaesmiclase{
+    font-weight: bold;
+    color:lightblue;
+
+}
