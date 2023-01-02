@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="cv.css">
+    <link rel="icon" href= "portapapeles.ico">
+    <script src="https://kit.fontawesome.com/fb84a9638e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="cv">
+        <!--Carta de presentacion con datos principales generados con la API -->
+        <div class="cartapresentacion">
+            <h1 id="titulo">Presentacion</h1>
+            <div class="principal">
+                <img  id="FotoPerfil" src="https://randomuser.me/api/portraits/men/52.jpg"><br>
+                <section class="buttons">
+                    <i id="nombreapellido" class="fa-solid fa-person"></i>
+                    <br>
+                    <i id="email" class="fa-solid fa-envelope"></i>
+                    <br>
+                    <i id="celular" class="fa-solid fa-phone"></i>
+                    <br>
+                    <i id="fechanacimiento" class="fa-solid fa-calendar-days"></i>
+                    <br>
+                    <i id="direccion" class="fa-solid fa-map"></i>
+                        
+                </section>
+                <p id="descripcion"></p>
+            </div>
+        </div>
+        <!--Informacion sobre las habilidades(conocimientos) y experiencias laborales-->
+        <div class="informaciondetallada">
+
+             <!--Habilidades adquiridos en la secundaria como en la universidad -->
+            <div class="habilidades">
+                <div class="formacion">
+                    <h2>Formacion</h2>
+                    <h4>-E.E.S.T. N°9 Antonio Jose Rodriguez</h4>
+                    <h5>Titulo: Tecnico Electronico</h5>
+                    <h4>-Universidad Nacional de Avellaneda</h4>
+                    <h5>Titulo: Ingenieria informatica/cursando actualidad</h5>
+                    
+                </div>
+                <div class="titulo/contenido">
+                    <h1 id="titulo2">Habilidades</h1><br>
+                    <ul>
+                        <li>Conocimientos de circuitos electrónicos.</li>
+                        <li>Red eléctrica continua y alterna.</li>
+                        <li>Manejo de herramientas de medición para circuitos electrónicos.</li>
+                        <li>Conocimientos básicos de neumática.</li>
+                        <li>Seguridad e Higiene</li>
+                        <li>Fundamentos de la informática</li>
+                        <li>Uso de distintos lenguajes de programación: </li>
+                            <ul>
+                                <li>Assembler</li>
+                                <li>c++</li>
+                                <li>Phyton</li> 
+                            </ul>
+                        <li>Sistemas embebidos.</li>
+                        <li>IoT e IIOT.</li>
+                        <li>Metodologías agiles.</li>
+                        <li>Técnicas de gestión de proyectos de ingeniería.</li>
+
+                    </ul>
+                </div> 
+            </div>
+
+            <!--Experiencia laboral -->
+            <div class="experiencia">
+                <h1 id="titulo3">Experiencias</h1>
+
+                <div class="titulosytareas">
+
+                    <div class="titulosexperiencia">
+                        <h4>Rubro:</h4>
+                        <h5>Comercial</h5>
+                        <h6>Encargado de comercio // 2017/2018</h6>
+                    </div>
+    
+                    <ul id="tareasenelpuesto">
+                        <li>Gestion del comerio</li>
+                        <li>Administracion de recursos y stock</li>
+                        <li>Arreglo de mercaderia con proveedores</li>
+                        <li>Ventas</li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="cv.js"></script>
+    
+</body>
+</html>
