@@ -1,81 +1,122 @@
 
-*{
+*{  
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
 
-
-
 body{
-    display: flex;
-    align-items: center;
-    justify-content:center;
+
+    width: 80%;
     background-color: rgb(192, 187, 180);
 }
 
-/**Carta de presentacion */
-.cartapresentacion{
+.cv{
     display: flex;
+    flex-direction: column;
     position: relative;
-    left: 350px;
+    left: 250px;
+}
+
+/*Carta de presentacion */
+.principal{
+    
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 300px;
     width: 750px;
     height: 450px;
     background-color:rgb(175, 163, 147);
     box-shadow: 4px 4px 5px #424242; 
-
 }
 
-.principal{
-    
-    
-    position: relative;
-    right:100px;
-    top:100px;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    width: 600px;
-    
-    height: 240px;
-    background-color:rgb(175, 163, 147);
-
-}
 
 .buttons{
     display: flex;
     flex-direction: column;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
     justify-content: space-around;
     text-align: center;
     position: relative;
-    top:30px;
-    right:30px;
+    top:90px;
+    right:240px;
+    width: 50px;
+    height: 300px;
 }
 
+/*Animaciones para los botones */
+#nombreapellido{
+
+    transition: 0.4s;
+}
+
+#nombreapellido:hover{
+    transform: translateX(4px) scale(2);
+}
+
+#email{
+
+    transition: 0.4s;
+}
+
+#email:hover{
+    transform: translateX(4px) scale(2);
+}
+
+#celular{
+
+    transition: 0.4s;
+}
+
+#celular:hover{
+    transform: translateX(4px) scale(2);
+}
+
+#fechanacimiento{
+
+    transition: 0.5s;
+}
+
+#fechanacimiento:hover{
+    transform: translateX(4px) scale(2);
+}
+
+#direccion{
+
+    transition: 0.4s;
+}
+
+#direccion:hover{
+    transform: translateX(4px) scale(2);
+}
+
+
 #FotoPerfil{
-    display: flex;
     height: 200px;
     width: 200px;
     position: relative;
-    right:60px;
+    top:120px;
+    right: 270px;
     background-size: cover;
     border-radius: 50%;
-    margin: 0 auto;
+    margin: 0;
     box-shadow: 4px 4px 5px #424242;
 }
 
 #descripcion{
 
-    width: 340px;
-    font-size: 25px;
-    position: relative;  
-    top:20px;
     display: flex;
     align-items: center;
-    justify-content:center;
-    margin: 0;
+    justify-content: center;
+    width: 200px;
+    height: 110px;
+    font-size: 24px;
+    position: relative;
+    top: 140px;
+    right: 130px;
+
 
 }
 
@@ -84,16 +125,19 @@ body{
     position: relative;
     left:280px;
     width: 300px;
+    height: 100px;
     
 }
 
 .informaciondetallada{
     display: flex;
     flex-direction: row;
+    position: relative;
+    
 }
 
 
-/**Habilidades */
+/*Habilidades */
 .habilidades{
     display: flex;
     position: relative;
@@ -112,7 +156,7 @@ body{
     position: relative;
     top:25px;
     left: 8px;
-    width:150px ;
+    width:150px;
     height: 400px;
     font-size:15px;
 }
@@ -130,25 +174,18 @@ body{
     left: 90px;
 }
 
-
+/*Expericencia laboral*/
 .experiencia{
     display: flex;
     position: relative;
     top:20px;
-    
+    flex-direction: column;
     width: 750px;
     height: 450px;
     background-color:rgb(175, 163, 147);
     box-shadow: 4px 4px 5px #424242; 
 }
 
-
-/** Expericencia laboral*/
-.experiencia{
-
-    display: flex;
-    flex-direction: column;
-}
 
 .titulosytareas{
 
@@ -165,4 +202,291 @@ body{
     justify-content: center;
     margin: 0;
     height:80px;
+}
+
+@media(max-width:1400px){
+
+
+    .principal{
+        height:450px;
+        width:560px ;
+        position: relative;
+    }
+
+    #titulo{
+        height:50px;
+        position: relative;
+        left: 180px;
+    }
+
+    #FotoPerfil{
+        height: 150px;
+        width: 150px;
+        margin-left: 90px;
+    }
+
+    #descripcion{
+
+        font-size: 18px;
+        display: flex;
+        position: relative;
+        top: 150px;
+        right:200px;
+        min-width: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media(max-width:1300px){
+
+
+    body{
+        
+        height: 100vh;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .cv{   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left:150px;
+
+    }
+
+    .principal{
+        position: relative;
+        left: -30px;
+        width: 750px;
+        height: 450px;
+    }
+
+    #FotoPerfil{
+        height: 200px;
+        width: 200px;
+    }
+
+    .buttons{
+        font-size: 20px;
+    }
+
+    #titulo{
+
+        position: relative;
+        left:280px;
+        width: 300px;
+        height: 100px;
+    }
+    #descripcion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 110px;
+        font-size: 24px;
+        position: relative;
+        top: 140px;
+        right: 130px;
+    }
+
+    .informaciondetallada{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .habilidades{
+        display: flex;
+        position: none;
+    }
+
+    .experiencia{
+        display: flex;
+        position:relative;
+        top:40px;
+        right:30px;
+
+    }
+
+    /*media queries */
+    
+    @media(max-width:900px){
+    
+        .cv{
+            transform: scale(0.8);
+            position: relative;
+            bottom:124px;
+            left: 80px;
+        }
+
+        
+    }
+
+
+    @media(max-width:631px){
+        
+        .cv{
+            transform: scale(0.7);
+            position: relative;
+           
+        }
+
+        .principal{
+
+            position: relative;
+            bottom: 100px;
+        }
+
+        .habilidades{
+            position: relative;
+            font-size: 17px;
+        }
+
+        .experiencia{
+            position: relative;
+            top: 130px;
+            font-size: 20px;
+        }
+
+        
+    }
+
+
+    @media(max-width:519px){
+        
+        .cv{
+            transform: scale(0.5);
+            position: relative;
+            left: 45px;
+            bottom: 240px;
+        }
+
+        .principal{
+
+            position: relative;
+            bottom: 100px;
+        }
+
+        .buttons{
+            transform: scale(1.1);
+        }
+
+        
+        .habilidades{
+            position: relative;
+            font-size: 17px;
+        }
+
+        .experiencia{
+            position: relative;
+            top: 130px;
+            font-size: 20px;
+        }
+
+    }
+    
+    @media(max-width:415px){
+
+        
+        .cv{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 80px;
+            bottom:400px;
+        }
+
+        .principal{
+
+          min-width: 100vh;
+          top:300px;
+          transform: scale(1.1);
+          box-shadow: none;
+        }
+        
+        #titulo{
+            transform: scale(1.1);
+            position: relative;
+            left:320px;
+        }
+
+        
+        #FotoPerfil{
+
+            right: 320px;
+        }
+
+        .buttons{
+
+            right: 300px;
+            transform: scale(1.2);
+        }
+
+        #descripcion{
+
+            right: 140px;
+            transform: scale(1.3);
+        }
+
+        .informaciondetallada{
+            top:300px;
+        }
+        .habilidades{
+            min-width: 100vh;
+            bottom:200px;
+            transform: scale(1.1);
+            box-shadow: none;
+        }
+
+        #titulo2{
+            visibility: hidden;
+        }
+        .formacion{
+
+            position: relative;
+            left:30px;
+            transform: scale(1.1);
+        }
+        .titulocontenido{
+
+            position: relative;
+            left:65px;
+            transform: scale(1.1);
+
+        }
+
+        .experiencia{
+            min-width: 100vh;
+            top:50px;
+            transform: scale(1.1);
+            box-shadow: none;
+        }
+
+        #titulo3{
+            visibility: hidden;
+        }
+
+        .titulosytareas{
+
+            position: relative;
+            right:65px;
+            transform: scale(1.1);
+        }
+
+        #tareasenelpuesto{
+
+            position: relative;
+            left:70px;
+        }
+
+    }
+
+     
+
 }
