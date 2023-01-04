@@ -204,6 +204,7 @@ body{
     height:80px;
 }
 
+ /*media query */
 @media(max-width:1400px){
 
 
@@ -313,8 +314,6 @@ body{
         right:30px;
 
     }
-
-    /*media queries */
     
     @media(max-width:900px){
     
